@@ -3,16 +3,18 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PotionsListComponent } from './entities/potions/potions-list/potions-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PotionsListComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [PotionsListComponent]
 })
 export class AppModule { }

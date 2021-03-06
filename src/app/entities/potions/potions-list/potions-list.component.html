@@ -1,0 +1,82 @@
+<!--<pre>
+   {{potions | json}}
+</pre>-->
+
+<!--Imagen anime-->
+<div class="mitad">
+   <div class="imagenAnime">
+      <img src="../../assets/imgs/pociones/anime-4453078_640.jpg" alt="magica">
+   </div>
+</div>
+
+<!--Tarjeta de poción-->
+<div class="mitad">
+   <h1>Poción de mana</h1>
+   <div class="row pocionCard" *ngFor="let pocion of potionsMana;">
+      
+      <!--Contenedor imagen-->
+      <div class="col-2">
+         <div class="pocionImagen">
+            <img [src]="pocion.urlImagen" alt="pocion">
+         </div>
+      </div>
+
+      <!--Contenedor descripción-->
+      <div class="col-10">
+
+         <div class="pocionNombre">
+            {{pocion.nombre}}
+         </div>
+         <div class="pocionDescripcion">
+            {{pocion.descripcion}}
+         </div>
+      </div>
+      
+   </div>
+
+   <h1>Poción de vida</h1>
+   <div class="row pocionCard" *ngFor="let pocion of potionsVida;">
+
+         <!--Contenedor imagen-->
+         <div class="col-2">
+            <div class="pocionImagen">
+               <img [src]="pocion.urlImagen" alt="pocion">
+            </div>
+         </div>
+
+         <!--Contenedor descripción-->
+         <div class="col-10">
+
+            <div class="pocionNombre">
+               {{pocion.nombre}}
+            </div>
+            <div class="pocionDescripcion">
+               {{pocion.descripcion}}
+            </div>
+         </div>
+         
+      </div>
+
+   <h1>Poción de energía</h1>
+   <div class="row pocionCard" *ngFor="let pocion of potionsEnergia;">
+
+      <!--Contenedor imagen-->
+      <div class="col-2">
+         <div class="pocionImagen">
+            <img [src]="pocion.urlImagen" alt="pocion">
+         </div>
+      </div>
+
+      <!--Contenedor descripción-->
+      <div class="col-10">
+
+         <div class="pocionNombre">
+            {{pocion.nombre}}
+         </div>
+         <div class="pocionDescripcion">
+            {{pocion.descripcion}}
+         </div>
+      </div>
+
+   </div>
+</div>
